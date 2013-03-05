@@ -11,8 +11,10 @@ WriteMakefile(
     	FILES => [".history_test", 'pod2htmd.tmp', 'pod2htmi.tmp']
     },
     BUILD_REQUIRES => {
-        'rlib'       => '0.02',
         'Test::More' => '0.81',
+    },
+    TEST_REQUIRES => {
+        'rlib'       => '0.02',
     },
     LICENSE          => 'perl',
     MIN_PERL_VERSION => 5.008008,
