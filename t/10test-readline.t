@@ -18,7 +18,7 @@ BEGIN {
 
 use Term::ReadLine::Perl5;
 
-my $verbose = defined @ARGV && ($ARGV[0] eq 'verbose');
+my $verbose = @ARGV && ($ARGV[0] eq 'verbose');
 ########################################################################
 # test new method
 
